@@ -115,7 +115,7 @@
     color: rgba(0, 0, 0, 0.40);
 }
 
-.container p, .title-text p, .detail p, .blog-text p{
+.container p, .title-text p, .blog-text p{
     font-size: 12px;
 }
 
@@ -139,7 +139,7 @@
     height: 1px;
 }
 
-.btn-sec, .btn-pri, .stake-bx > a, button, input::placeholder{
+.btn-sec, .btn-pri, .stake-bx :nth-child(2) p, button, input::placeholder{
     letter-spacing: .64px;
 }
 
@@ -199,7 +199,7 @@
     pointer-events: none;
 }
 
-.services p, h4, button, .stake-bx > a{
+.services p, h4, button, .stake-bx :nth-child(2) p{
     font-weight: 600;
 }
 
@@ -401,12 +401,18 @@ video {
     height: 560px;
     min-height: 560px;
     max-height: 560px;
+    object-fit: cover;
 }
 
 h4{
     font-size: 24px;
     line-height: 32px; /* 133.333% */
 }
+
+.detail p{
+    font-size: 16px;
+}
+
 
 .detail-text p{
     letter-spacing: 0;
@@ -423,14 +429,14 @@ h1{
     line-height: 64px; /* 114.286% */
 }
 
-.stake-bx > a{
+.stake-bx :nth-child(3){
     background: linear-gradient(90deg, #48a857 -1.27%, #f9ad02);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .stake img{
-    /* max-width: 320px; */
+    max-width: 320px;
     min-height: 240px;
     max-height: 240px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
@@ -443,6 +449,10 @@ h1{
     min-height: 640px;
     max-height: 640px;
     box-shadow: 0px 64px 128px 0px rgba(0, 0, 0, 0.16);
+}
+
+.pdtp{
+    padding-top: 120px !important;     /* To be removed when pdf is revealed */
 }
 
 .stars{
@@ -508,14 +518,20 @@ input::placeholder { /* For modern browsers */
     .button-group{
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+    }
+
+    .btn-sec, .btn-pri{
+        width: 100%;
     }
 
     .services{
         flex-direction: column;
+        width: 100%;
     }
 
     .ver-line{
-        width: 255px;
+        width: 100%;
         height: 1px;
     }
 
@@ -588,6 +604,10 @@ input::placeholder { /* For modern browsers */
     .stake-bx{
         order: 2;
         padding: 24px;
+    }
+
+    .stake img{
+        max-width: 452px;
     }
     
     .image-container{
