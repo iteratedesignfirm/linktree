@@ -368,7 +368,7 @@ video {
  }
 
 .logo {
-    animation: marquee 5s linear infinite;
+    animation: marquee 10s linear infinite;
     display: flex;
     width: 1600px;
     white-space: nowrap;
