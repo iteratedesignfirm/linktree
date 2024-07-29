@@ -378,7 +378,7 @@ video {
 
 @keyframes marquee {
     0% { transform: translateX(0); } /* Start from the left edge */
-    100% { transform: translateX(-25.4%); } 
+    100% { transform: translateX(-25.45%); } 
 }
 
 .template-bx{
