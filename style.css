@@ -361,31 +361,42 @@ video {
 
 .logos{
     width: 100%;
-    gap: 16px;
-    display: inline-flex;
+    max-width: 758px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 33.33%, #000 66.67%, rgba(0, 0, 0, 0.00) 100%);
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 33.33%, #000 66.67%, rgba(0, 0, 0, 0.00) 100%);
  }
 
 .logo {
-    animation: marquee 15s linear infinite;
+    animation: marquee 7s linear infinite;
     display: flex;
-    width: 1600px;
+    width: 1500px;
     white-space: nowrap;
 }
 
 .logo_svg {
+    width: 100%;
     display: flex;
-    gap: 16px;
-    width: 200px;
     justify-content: center;
     align-items: center;
 }
 
+button:hover {
+    scale: 1.025;
+    transition: all 0.5s ease 0.1s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    box-shadow: #000;
+}
+
+
+
 
 @keyframes marquee {
     0% { transform: translateX(0); } /* Start from the left edge */
-    100% { transform: translateX(-100.5%); } 
+    100% { transform: translateX(-50%); } 
 }
 
 .template-bx{
