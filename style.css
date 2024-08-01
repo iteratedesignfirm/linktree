@@ -344,6 +344,8 @@ video {
 
 .social-links{
     gap: 32px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .services{
