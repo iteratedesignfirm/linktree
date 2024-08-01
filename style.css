@@ -126,7 +126,7 @@ h1 {
     width: 100%;
 }
 
-.btn-sec, .btn-pri, button, input{
+.btn-sec, .btn-pri {
     min-width: 200px;
 }
 
@@ -174,6 +174,28 @@ h1 {
 .hor-line, .divider{
     height: 1px;
 }
+
+.Subscribe p {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.Subscribe h2 {
+    font-family: DM Sans;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+}
+
 
 .btn-sec, .btn-pri, .stake-bx :nth-child(2) p, button, input::placeholder{
     letter-spacing: .64px;
@@ -684,6 +706,26 @@ input:focus::placeholder {
     .blog-text h1{
         line-height: 48px;
         font-size: 40px;
+    }
+
+    .Subscribe p {
+        font-family: DM Sans;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.16em;
+        text-align: center;
+        color: white;
+        opacity: 0.7;
+    }
+
+    .Subscribe h2 {
+        font-family: DM Sans;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: center;
+        color: #fff;
     }
 
     .stake{
