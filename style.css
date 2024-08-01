@@ -634,18 +634,15 @@ input:focus::placeholder {
         align-items: flex-end;
     }
 
-    .stake img{
-        order: 1;
-        height: 240px;
-    }
-
     .stake-bx{
         order: 2;
         padding: 24px;
     }
 
     .stake img{
-        max-width: 452px;
+        max-width: 100%;
+        height: 400px;
+        order: 1;
     }
     
     .image-container{
@@ -711,5 +708,7 @@ input:focus::placeholder {
 
 
 @media only screen and (max-width: 400px) {
-    
+    .stake img {
+        height: 240px;
+    }
 }
