@@ -45,6 +45,16 @@
     justify-content: flex-end;
 }
 
+h1 {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: black;
+
+}
+
 .section, .top, .logotype, .logotype > img, .button-group, .btn-sec, .btn-pri, .services, #social-proof, .container, 
 .section-title, .eclipse, .title-text, .template-tab, .address-bar, .detail, .blog-top, .blog-text, 
 .social-links, .logos, .logo, .detail-text, .benefits, .testimonial-bx, .stars, .cta-bx, input, button, .footer, .divider{
@@ -57,6 +67,32 @@
 
 .btn-sec, .btn-pri-noise, .eclipse, .btn-pri, .stake-bx, .stake img, .testimonial, input, button{
     border-radius: 8px;
+}
+
+.detail-text h2 {
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #000;
+}
+
+.blog-text h2 {
+    font-family: DM Sans;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    color: #000;
+}
+
+.stake-bx h3 {
+    font-family: DM Sans;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    color: #000;
 }
 
 .image-container, .template-bx{
@@ -541,6 +577,14 @@ input:focus::placeholder {
 
 /* Mobile */
 @media(max-width: 700px){
+    h1 {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+
+    }
 
     .section{
         padding: 40px 24px;
@@ -618,6 +662,19 @@ input:focus::placeholder {
     #blog{
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .detail-text h2 {
+        font-size: 18px;
+    }
+    
+    .blog-text h2 {
+        font-size: 40px;
+    }
+    
+    .stake-bx h3 {
+        font-size: 18px;
+        color: #000;
     }
 
     .blog-text{
