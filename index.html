@@ -21,23 +21,24 @@
   <body>
     <main class="parent-container">
         <section id='hero' class="section">
-            <article class="top">
+            <article class="hero-top">
                 <div class="logotype">
                     <img src='../img/logo.svg' alt="Iterate firm logo">
                     <h1 class="logo-text">Iterate Design Firm</h1>
                 </div>
-                <div class="hor-line"></div>
+                <div class="hor"></div>
                 <p>We provide you with a list of prospects with genuine interest in your products/services.</p>
-                <div class="button-group">
+                <div class="contact-button-group">
                     <a class="btn-sec" href="https://resourcekit.i38agency.com/blog/" target="_blank">Visit our blog</a>
                     <a class="btn-sec" href="https://resourcekit.i38agency.com/templates/" target="_blank">Visit templates</a>
-                    <a class="btn-pri" href="" target="_blank">
-                        <video autoplay loop muted>
-                            <source src="../video/bg-video.mp4">
+                    <div class="video-button">
+                        <video autoplay muted loop id="button-video"  id="button-video">
+                            <source src="/video/bg-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
                         </video>
                         <div class="btn-pri-noise"></div>
-                        Schedule a call
-                    </a>
+                        <a href="" target="_blank" class="content-button">Schedule a call</a>
+                    </div>
                 </div>
                 <div class="social-links">
                     <a href="https://facebook.com/i38agency" target="_blank">
@@ -69,7 +70,7 @@
             </article>
         </section>
 
-        <section id="social-proof"  class="section">
+        <section id="social-proof"  class="">
             <video autoplay loop muted>
                 <source src="../video/bg-video.mp4">
             </video>
@@ -78,10 +79,10 @@
                 <div class="logos">
                     <div class="logo">
                         <div class="logo_svg">
-                                <img src="/img/icons.svg" alt="slider icon images ">
-                                <img src="/img/icons.svg" alt="slider icon images ">  
-                                <img src="/img/icons.svg" alt="slider icon images ">
-                                <img src="/img/icons.svg" alt="slider icon images ">           
+                            <img src="/img/icons.svg" alt="slider icon images ">
+                            <img src="/img/icons.svg" alt="slider icon images ">  
+                            <img src="/img/icons.svg" alt="slider icon images ">
+                            <img src="/img/icons.svg" alt="slider icon images ">           
                         </div>
                     </div>                    
                 </div>
@@ -91,13 +92,16 @@
         <section id="featured-template" class="section featured">
             <article class="template-bx">
                 <div class="section-title">
-                    <div class="icons">
+                    <div class="head-icons">
                         <div class="eclipse" style="background: #FF3939;"></div>
                         <div class="eclipse" style="background: #FF0;"></div>
                         <div class="eclipse" style="background: #008000;"></div>
                     </div>
                     <div class="title-text">
                         <p>Featured Template</p>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
 
@@ -144,25 +148,23 @@
                     <p>Showcase your fintech products and services with stunning design and features that convert.</p>
                 </div>
                 <div class="button-group">
-                    <a class="btn-sec" href="https://resourcekit.i38agency.com/templates/template/#loaner---fintech-landing-page" target="_blank">View template</a>
+                    <a class="template-btn" href="https://resourcekit.i38agency.com/templates/template/#loaner---fintech-landing-page" target="_blank">View template</a>
                 </div>
             </article>
         </section>
 
         <section id="blog" class="section">
             <article class="blog-top">
-                <div class="blog-text">
-                    <p>Blog</p>
-                    <h2>Our latest news and articles</h2>
-                </div>
+                <p>Blog</p>
+                <h2>Our latest news and articles</h2>
             </article>
 
             <article class="benefits">
-                <div class="stake">
+                <div class="stake stake-inverse">
                     <a href="https://resourcekit.i38agency.com/blog/post/#what-is-a-business-lead-and-why-are-they-important" target="_blank" class="stake-bx">
                         <h3>What is a business lead and why is it important?</h3>
                         <p>All businesses need customers to survive, but not everyone is ready to buy. Data shows only 3% are ready to pull out their wallets immediately. However, there’s a much larger group (40%) who are either ready to buy or interested but not right now—these are your business leads.</p>
-                        <p>Read more</p>
+                        <p class="read-more">Read more</p>
                     </a>
                     <img src="../img/blog-img1.jpg" alt="loaner feature image">
                 </div>
@@ -172,7 +174,7 @@
                     <a href="https://resourcekit.i38agency.com/blog/post/#what-is-a-lead-magnet-definition-examples-and-guide-step-by-step" class="stake-bx">
                         <h3>What is a lead magnet? Definition, examples and guide [step-by-step].</h3>
                         <p>Leads are potential customers who have shown interest in your product or service and provided their contact information. However, most people do not part easily with their contact details unless offered something valuable in return. Lead magnets are effective tools for capturing leads and their contact information.</p>
-                        <p>Read more</p>
+                        <p class="read-more">Read more</p>
                     </a>
                 </div>
 
@@ -245,11 +247,9 @@
                     <source src="../video/bg-video.mp4">
                 </video>
 
-                <div class="blog-top">
-                    <div class="Subscribe">
-                        <p>Newsletter</p>
-                        <h2>Subscribe to our newsletter</h2>
-                    </div>
+                <div class="blog-tops">
+                    <p>Newsletter</p>
+                    <h2>Subscribe to our newsletter</h2>
                 </div>
 
                 <form action="process_form.php" method="post">
@@ -260,18 +260,19 @@
             <div class="bg-bottom"></div>
         </section>
 
-        <section class="footer section">
-            <article class="divider">
-                <div class="hor-line"></div>
-            </article>
+        <footer class="footer section">
+            <div class="hor-line"></div>
             <article class="links">
                 <div>
-                    <p>© 2024 Iterate Design Firm</p>
+                    <p class="contact-us">© 2024 Iterate Design Firm</p>
                 </div>
-                <a href="">hello.i38@gmail.com</a>
-                <a href="https://wa.me/2348061977760" target="_blank">+2348061977760</a>
+                <div id="links">
+                    <a href="">hello.i38@gmail.com</a>
+                    <a href="https://wa.me/2348061977760" target="_blank">+2348061977760</a>
+                </div>
+                
             </article>
-        </section>
+        </footer>
     </div>
   </body> 
 </html>
