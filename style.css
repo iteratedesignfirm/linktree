@@ -628,6 +628,7 @@ img, video {
 .cta-bx {
     position: relative;
     max-width: 960px;
+    width: 100%;
     z-index: 1;
     overflow: hidden;
     padding: 5rem;
@@ -660,27 +661,14 @@ img, video {
     align-self: stretch;
 }
 
-.blog-top h2 {
-    color: rgba(0, 0, 0, 0.64);
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px; /* 114.286% */
-    align-items: stretch;
-}
-
 .blog-tops h2 {
-    color: #FFF;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 40px;
-    font-style: normal;
+    font-family: DM Sans;
+    font-size: 56px;
     font-weight: 400;
-    line-height: 48px; /* 120% */
+    line-height: 72px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
 }
-
 
 
 
@@ -816,6 +804,16 @@ footer {
         align-items: center;
         gap: 2.5rem;
         align-self: stretch;
+    }
+
+    .blog-tops h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px; /* 120% */
     }
 
     .contact-button-group {
