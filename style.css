@@ -303,6 +303,8 @@ h1 {
     max-width: 960px;
     height: 560px;
     flex: 1 0 0;
+    object-fit: cover;
+    object-position: top;
 }
 .section-title {
     display: flex;
