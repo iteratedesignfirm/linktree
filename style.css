@@ -341,7 +341,6 @@ h1 {
     overflow: hidden;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     flex: 1 0 0;
