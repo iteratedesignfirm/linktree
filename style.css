@@ -298,6 +298,8 @@ h1 {
 }
 .template-bx img {
     width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     max-width: 960px;
     height: 560px;
     flex: 1 0 0;
@@ -335,15 +337,28 @@ h1 {
 }
 
 .address-bar {
-    width: 88%;
     display: flex;
+    overflow: hidden;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 0 0.5rem;
-    border-radius: 2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
 }
 
 .address-bar p {
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.40);
+    text-overflow: ellipsis;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */            /* Ensure the paragraph respects the container's width */
+}
+
+.address-bar p span {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -361,6 +376,8 @@ h1 {
     align-items: center;
     background: rgba(255, 255, 255, 0.40);
     backdrop-filter: blur(20px);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .title-text {
@@ -900,8 +917,11 @@ footer {
     }
 
     .template-tab {
-        padding: 0;
-        justify-content: space-around;
+        display: flex;
+        padding: 12px 16px;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
     }
 
     #blog {
@@ -1006,5 +1026,8 @@ footer {
 
     .contact-us {
         text-align: center;
+    }
+    .title-text p {
+        display: none;
     }
 }
