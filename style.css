@@ -1005,6 +1005,7 @@ footer {
     .stake {
         flex-direction: column;
         width: 100%;
+        margin-bottom: 0;
     }
 
     .stake-inverse {
@@ -1017,7 +1018,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 16px;
         align-self: stretch;
     }
 
