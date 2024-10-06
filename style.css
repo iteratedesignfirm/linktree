@@ -15,6 +15,14 @@
 html {
     font-size: 16px;
 }
+body {
+    -webkit-font-smoothing: antialiased; /* For WebKit-based browsers (Chrome, Safari) */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on Mac OS X */
+    text-rendering: optimizeLegibility; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* main {
     background-color: aqua;
@@ -428,8 +436,7 @@ h1 {
 }
 
 .detail p {
-    /* display: -webkit-box; */
-    display: none;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     align-self: stretch;
@@ -466,6 +473,7 @@ h1 {
     font-weight: 400;
     line-height: 24px; /* 150% */
     padding-top: 1rem;
+    display: none;
 }
 
 
